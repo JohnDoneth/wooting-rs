@@ -1,0 +1,6 @@
+[package]
+name = "wooting"
+version = "0.1.0"
+authors = ["John Doneth <doneth7@gmail.com>"]
+
+[dependencies]
