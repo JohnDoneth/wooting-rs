@@ -7,11 +7,7 @@ use wooting_rgb_sys::wooting_rgb_reset;
 pub use wooting_rgb_sys::WOOTING_RGB_COLS;
 pub use wooting_rgb_sys::WOOTING_RGB_ROWS;
 
-/// 
-fn assert_key_bounds(row : u8, column: u8) {
-    assert!(column < WOOTING_RGB_COLS as u8, "Key column out of bounds");
-    assert!(row < WOOTING_RGB_ROWS as u8, "Key row out of bounds");
-}
+use ::assert_key_bounds;
 
 /// Directly set and update 1 key on the keyboard
 /// 
@@ -34,7 +30,7 @@ fn test_array_set_single_key() {
     direct_set_single_key(0, 0, RGB8::new(0, 0, 0));
 }
 
-/// 
+/// Reset a single key
 pub fn direct_reset_single_key(row: u8, column: u8) -> bool {
 
     assert_key_bounds(row, column);
