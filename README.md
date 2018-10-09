@@ -1,4 +1,7 @@
-# [Heavily WIP] Wooting Keyboard RGB & Analog crate for Rust
+
+# Wooting-rs
+
+[Heavily WIP] Wooting Keyboard RGB & Analog crate for Rust
 
 Feel free to issue a pull request or raise an issue!
 
