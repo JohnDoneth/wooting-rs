@@ -4,3 +4,7 @@ version = "0.1.0"
 authors = ["John Doneth <doneth7@gmail.com>"]
 
 [dependencies]
+wooting-analog-sys = { path = "../wooting-analog-sys" }
+wooting-rgb-sys = { path = "../wooting-rgb-sys" }
+
+rgb = "*"

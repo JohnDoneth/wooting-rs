@@ -1,9 +1,9 @@
 
+extern crate rgb as color;
+extern crate wooting_rgb_sys;
 
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
-}
+pub mod rgb;
+pub mod analog;
+
+pub const KEYBOARD_COLUMNS : u8 = wooting_rgb_sys::WOOTING_RGB_COLS as u8;
+pub const KEYBOARD_ROWS : u8 = wooting_rgb_sys::WOOTING_RGB_ROWS as u8;

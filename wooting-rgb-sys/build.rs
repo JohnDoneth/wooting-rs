@@ -1,7 +1,10 @@
 extern crate bindgen;
 
+extern crate cc;
+
 use std::env;
 use std::path::PathBuf;
+use std::path::Path;
 
 fn main() {
     // Tell cargo to tell rustc to link the system bzip2
@@ -25,4 +28,22 @@ fn main() {
     bindings
         .write_to_file(out_path.join("bindings.rs"))
         .expect("Couldn't write bindings!");
+
+    let source_path = Path::new("./wooting-rgb-sdk/src");
+
+    // This following section is Windows specific and needs to be 
+    // refactored to be cross-platform
+    cc::Build::new()
+        .file("wooting-rgb-sdk/hidapi/windows/hid.c")
+        .include("wooting-rgb-sdk/hidapi/hidapi/")
+        .compile("hidapi");
+    
+    println!("cargo:rustc-link-lib=setupapi");
+
+    cc::Build::new()
+        .file("wooting-rgb-sdk/src/wooting-rgb-sdk.c")
+        .file("wooting-rgb-sdk/src/wooting-usb.c")
+        .include(source_path)
+        .include("wooting-rgb-sdk/hidapi/hidapi/")
+        .compile("wooting-rgb-sdk");
 }
