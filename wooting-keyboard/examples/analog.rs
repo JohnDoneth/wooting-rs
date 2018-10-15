@@ -10,7 +10,7 @@ fn main() {
 
     loop {
 
-        let current_value = analog::read_key(6, 5);
+        let current_value = analog::read_key(5, 6);
 
         if current_value != last_value {
             println!("Space Key Analog Reading: {}", current_value);
