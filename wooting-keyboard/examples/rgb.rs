@@ -1,11 +1,10 @@
-
-extern crate wooting;
+extern crate wooting_keyboard;
 extern crate rgb as color;
 
 use color::RGB8;
 
-use wooting::rgb;
-use wooting::{KEYBOARD_ROWS, KEYBOARD_COLUMNS};
+use wooting_keyboard::rgb;
+use wooting_keyboard::{KEYBOARD_ROWS, KEYBOARD_COLUMNS};
 
 fn main() {
 
