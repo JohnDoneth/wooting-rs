@@ -1,6 +1,6 @@
 [package]
-name = "wooting"
-version = "0.1.0"
+name = "wooting-keyboard"
+version = "0.0.1"
 authors = ["John Doneth <doneth7@gmail.com>"]
 
 [dependencies]

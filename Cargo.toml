@@ -1,0 +1,7 @@
+[workspace]
+
+members = [
+    "wooting-analog-sys",
+    "wooting-keyboard",
+    "wooting-rgb-sys"
+]
