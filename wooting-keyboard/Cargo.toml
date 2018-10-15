@@ -2,6 +2,7 @@
 name = "wooting-keyboard"
 version = "0.0.1"
 authors = ["John Doneth <doneth7@gmail.com>"]
+description = "High-level Rust wrapper for the Wooting Keyboard, exposing both RGB and Analog functionality."
 license = "MIT"
 license-file = "../LICENSE"
 repository = "https://github.com/JohnDoneth/wooting-rs"
