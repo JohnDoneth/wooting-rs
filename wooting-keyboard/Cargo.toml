@@ -2,6 +2,9 @@
 name = "wooting-keyboard"
 version = "0.0.1"
 authors = ["John Doneth <doneth7@gmail.com>"]
+license = "MIT"
+license-file = "../LICENSE"
+repository = "https://github.com/JohnDoneth/wooting-rs"
 
 [dependencies]
 wooting-analog-sys = { path = "../wooting-analog-sys" }
