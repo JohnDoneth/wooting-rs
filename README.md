@@ -6,7 +6,7 @@ Feel free to issue a pull request or raise an issue!
 
 I currently don't have a Wooting keyboard to make sure the code is behaving correctly. Once, I do (by December?), a lot more testing and development will occur.
 
-If you do already have a Wooting keyboard your help would be much appreciated.
+If you do already have a Wooting keyboard your help would be much appreciated!
 
 ## Build & Run
 
