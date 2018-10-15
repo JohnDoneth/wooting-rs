@@ -10,6 +10,8 @@ If you do already have a Wooting keyboard your help would be much appreciated!
 
 ## Build & Run
 
+- Bindgen requires clang. You can find the requirements here https://rust-lang-nursery.github.io/rust-bindgen/requirements.html
+
 ```shell
 git submodule update --init --recursive
 
