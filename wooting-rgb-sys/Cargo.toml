@@ -10,5 +10,5 @@ repository = "https://github.com/JohnDoneth/wooting-rs"
 [dependencies]
 
 [build-dependencies]
-bindgen = "0.42.1"
+bindgen = "0.42.2"
 cc = "1.0"

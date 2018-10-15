@@ -9,9 +9,8 @@ use std::process::Command;
 
 fn main() {
 
-    let manifest_dir = env::var("CARGO_MANIFEST_DIR").unwrap();
-
-    let curr_dir = Path::new(&manifest_dir);
+    //let manifest_dir = env::var("CARGO_MANIFEST_DIR").unwrap();
+    //let curr_dir = Path::new(&manifest_dir);
     Command::new("git")
         .arg("submodule")
         .arg("update")

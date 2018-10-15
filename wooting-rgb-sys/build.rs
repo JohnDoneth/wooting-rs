@@ -6,14 +6,16 @@ use std::env;
 use std::path::PathBuf;
 use std::path::Path;
 
+use std::process::Command;
+
 fn main() {
 
-    let curr_dir = Path::new(os::getenv("CARGO_MANIFEST_DIR").unwrap());
-    Command::new("git").arg("submodule").arg("update").arg("--init").cwd(&curr_dir).status().unwrap();
-
-    // Tell cargo to tell rustc to link the system bzip2
-    // shared library.
-    //println!("cargo:rustc-link-lib=bz2");
+    Command::new("git")
+        .arg("submodule")
+        .arg("update")
+        .arg("--init")
+        .status()
+        .unwrap();
 
     // The bindgen::Builder is the main entry point
     // to bindgen, and lets you build up options for
