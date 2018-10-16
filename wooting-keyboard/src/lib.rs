@@ -16,6 +16,7 @@ pub fn is_keyboard_connected() -> bool {
     unsafe { wooting_kbd_connected() }
 }
 
+/// Assert that the given row and column are within bounds
 fn assert_key_bounds(row : u8, column: u8) {
     assert!(column < KEYBOARD_COLUMNS, "Key column out of bounds");
     assert!(row < KEYBOARD_ROWS, "Key row out of bounds");
