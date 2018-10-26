@@ -25,7 +25,7 @@ fn main() {
 
     for row in 0..KEYBOARD_ROWS {
         for column in 0..KEYBOARD_COLUMNS {
-            rgb::direct_set_single_key(row, column, RGB8::new(255, 255, 255));
+            rgb::direct_set_single_key(row, column, RGB8::new(0, 255, 255));
 
             std::thread::sleep(std::time::Duration::from_millis(30));
         }
