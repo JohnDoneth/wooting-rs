@@ -41,7 +41,7 @@ fn main() {
 
     // This following section is Windows specific and needs to be 
     // refactored to be cross-platform
-    cc::Build::new()
+    /*cc::Build::new()
         .file("wooting-analog-sdk/hidapi/windows/hid.c")
         .include("wooting-analog-sdk/hidapi/hidapi/")
         .compile("hidapi");
@@ -53,7 +53,10 @@ fn main() {
         .file("wooting-analog-sdk/src/wooting-analog-sdk.c")
         .include(source_path)
         .include("wooting-analog-sdk/hidapi/hidapi/")
-        .compile("wooting-analog-sdk");
+        .compile("wooting-analog-sdk");*/
+
+    println!("cargo:rustc-link-lib=wooting-analog-sdk");
+    println!("cargo:rustc-link-search=C:/Users/John/Documents/GitHub/wooting-rs/wooting-analog-sys");
 
     
 }

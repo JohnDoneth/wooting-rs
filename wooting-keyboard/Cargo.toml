@@ -11,3 +11,4 @@ wooting-analog-sys = { path = "../wooting-analog-sys" }
 wooting-rgb-sys = { path = "../wooting-rgb-sys" }
 
 rgb = "*"
+sharedlib = "7.0.0"

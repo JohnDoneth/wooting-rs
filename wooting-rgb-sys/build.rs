@@ -39,7 +39,7 @@ fn main() {
 
     // This following section is Windows specific and needs to be 
     // refactored to be cross-platform
-    cc::Build::new()
+    /*cc::Build::new()
         .file("wooting-rgb-sdk/hidapi/windows/hid.c")
         .include("wooting-rgb-sdk/hidapi/hidapi/")
         .compile("hidapi");
@@ -51,5 +51,10 @@ fn main() {
         .file("wooting-rgb-sdk/src/wooting-usb.c")
         .include(source_path)
         .include("wooting-rgb-sdk/hidapi/hidapi/")
-        .compile("wooting-rgb-sdk");
+        .compile("wooting-rgb-sdk");*/
+
+    println!("cargo:rustc-link-lib=wooting-rgb-sdk");
+    println!("cargo:rustc-link-search=C:/Users/John/Documents/GitHub/wooting-rs/wooting-rgb-sys");
+
+    
 }
